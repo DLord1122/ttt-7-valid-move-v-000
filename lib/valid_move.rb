@@ -1,8 +1,8 @@
-def valid_move?(number_entered)
+def valid_move?(board, index)
   number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
 end
 
-ddef position_taken?(board, index)
+def position_taken?(board, index)
 
   taken = nil
   if (board[index] ==  " " || board[index] == "" || board[index] == nil)
@@ -10,5 +10,5 @@ ddef position_taken?(board, index)
   else
   taken = true
   end
-  taken 
+  taken
 end
