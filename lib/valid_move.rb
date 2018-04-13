@@ -1,5 +1,5 @@
 def valid_move?(board, index)
-  taken= true
+  taken= nil
   if (board[index] == " ")
     taken = false
 end
